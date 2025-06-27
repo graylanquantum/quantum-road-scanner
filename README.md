@@ -1,4 +1,4 @@
-````markdown
+
 # Quantum Road Scanner (QRS)
 
 A Flask-based web application that leverages quantum simulations, hypertime analysis, and advanced AI to scan road conditions and report potential hazards—all while ensuring strong encryption, privacy, and data security.
