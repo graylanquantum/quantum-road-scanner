@@ -86,14 +86,14 @@ A Flask-based web application that leverages quantum simulations, hypertime anal
 ## Installation
 
 1. **Clone the repo**  
-   ```bash
+
    git clone https://github.com/your-org/quantum_road_scanner.git
    cd quantum_road_scanner
-````
+
 
 2. **Create & activate a virtual environment**
 
-   ```bash
+
    python3 -m venv venv
    source venv/bin/activate
    ```
@@ -110,11 +110,11 @@ A Flask-based web application that leverages quantum simulations, hypertime anal
 
 1. **Set environment variables**
 
-   ```bash
+
    export INVITE_CODE_SECRET_KEY="your-secure-session-secret"
    export ENCRYPTION_PASSPHRASE="your-encryption-passphrase"
    export OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxx"
-   ```
+
 
 2. **Permissions for salt file directory**
    The app will create `/home/appuser/.keys` and store a salt file there with `chmod 600`. Ensure your process user can write there.
@@ -125,11 +125,11 @@ A Flask-based web application that leverages quantum simulations, hypertime anal
 
 Start the production server on port 3000:
 
-```bash
+
 python app.py
 # or, explicitly:
 waitress-serve --host=0.0.0.0 --port=3000 app:app
-```
+
 
 Then visit:
 [http://localhost:3000/home](http://localhost:3000/home)
@@ -187,4 +187,4 @@ All POST forms and AJAX calls require a valid CSRF token header.
 3. Write tests for new functionality
 4. Ensure linting & formatting (`black .`, `flake8`)
 5. Submit a pull request 
-```
+
